@@ -10,6 +10,7 @@ class Questions extends CI_Controller {
 	
 	private function slide_url($id, $tid)
 	{
+		// 获取slide文件URL
 		$dir = $this->config->item('exam_dir');
 		return base_url().$dir.'/'.$tid.'/'.$id.'.html';
 	}
